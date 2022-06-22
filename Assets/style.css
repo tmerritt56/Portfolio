@@ -1,0 +1,42 @@
+:root {
+    --white: #fff;
+    --light-purple: rgb(232, 166, 248);
+    --black: rgb(7,7,7)
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 25px;
+    display: inline-block;
+    font-family:cursive;
+    margin: 10px auto 10px 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(7, 7, 7);
+    background-color:rgb(232, 166, 248);
+    font-family: sans-serif;
+    padding-right: 40px;
+}
