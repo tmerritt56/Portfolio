@@ -73,6 +73,7 @@ h1 {
     padding: 25px;
     clear: both;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 a:link {
     color: var(--white);
