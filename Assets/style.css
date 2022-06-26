@@ -1,9 +1,10 @@
 :root {
     --white: #fff;
     --light-purple: rgb(232, 166, 248);
-    --black: rgb(7,7,7)
+    --dark-blue: rgb(1, 117, 126);
+    --black: #444244;
+    --dark-turq: darkturquoise;
 }
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,29 +15,161 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    line-height: 1;
+    color: var(--light-purple);
+    background-color: black;
+    text-align: center;
 }
-
+h1,
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 300;
+    margin: 20px;
+}
 h1 {
-    font-size: 60px;
-    margin: 25px;
-    display: inline-block;
-    font-family:cursive;
-    margin: 10px auto 10px 50px;
+    justify-content: center;
+    float: center;
+    display: inline;
+    text-align: center;
+    font-size: 50px;
 }
-
-nav ul li {
-    display: inline-block;
-    margin-left: 30px;
-    margin-top: 50px;
-    font-size: 30px;
-}
-
 .heading {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: rgb(7, 7, 7);
-    background-color:rgb(232, 166, 248);
-    font-family: sans-serif;
-    padding-right: 40px;
+    padding: 25px;
+    color: var(--white);
+    height: 250px;
+    width: 100%;
+    background-image: url(./Images/Unicorn1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.heading ul li {
+    display: block;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+}
+.me {
+    height: 250px;
+}
+.image1 { 
+    height: 100%;
+    width: 95%;
+    padding: 5px;
+    border: solid 3px plum;
+    margin-top: 15px;
+    margin-bottom: 5px;
+} 
+ .images { 
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 200px;
+    width: auto;
+    padding: 2px;
+    border: solid 2px plum;
+} 
+.footer {
+    padding: 25px;
+    clear: both;
+    text-align: center;
+}
+a:link {
+    color: var(--white);
+}
+a:visited {
+    color:lavenderblush;
+}
+a:hover {
+    color: lightpink;
+}
+
+@media screen and (min-width: 768px) {
+    .heading {
+        padding: 25px;
+        color: var(--white);
+        height: 300px;
+        width: 100%;
+        background-image: url(./Images/Unicorn1.jpg);
+        background-size:contain;
+        background-position: center;
+        font-size: 60px;
+    }
+    h1 {
+        float: center;
+        display: inline;
+        text-align: center;
+        font-size: 70px;
+        padding: 50px;
+    }
+    .heading ul li {
+        display: inline;
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .me {
+        height: 350px;
+    }
+    .image1 { 
+        height: 100%;
+        width: 85%;
+        padding: 5px;
+        border: solid 3px plum;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    } 
+     .images { 
+        display: inline-block;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 250px;
+        width: 40%;
+        padding: 2px;
+        border: solid 2px plum;
+    } 
+}
+@media screen and (min-width: 992px) {
+    .heading {
+        padding: 25px;
+        color: var(--white);
+        height: 300px;
+        width: 100%;
+        background-image: url(./Images/Unicorn1.jpg);
+        background-size:contain;
+        background-position: center;
+    }
+    h1 {
+        float: center;
+        display: inline;
+        text-align: center;
+        font-size: 70px;
+        padding: 50px;
+    }
+    .heading ul li {
+        display: inline;
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .me {
+        height: 500px;
+    }
+    .image1 { 
+        height: 100%;
+        width: 75%;
+        padding: 5px;
+        border: solid 3px plum;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    } 
+     .images { 
+        display: inline-block;
+        flex-wrap: nowrap;
+        height: 370px;
+        width: 40%;
+        padding: 2px;
+        border: solid 2px plum;
+        margin-right: 8px;
+    } 
 }
